@@ -35,11 +35,16 @@ class Vector2 {
     }
 
     Normalize(){
-        return new Vector2(this.x / this.mag, this.y / this.mag)
+        return new Vector2(this.x / this.Magnitude(), this.y / this.Magnitude())
     }
 
     SetMag(num){     
         return new Vector2(this.Normalize().x * num, this.Normalize().y * num)
+    }
+
+    Clamp(num){
+        if(this.Magnitude() > num) return this.SetMag(num);
+        return this;
     }
 
     toString(){
