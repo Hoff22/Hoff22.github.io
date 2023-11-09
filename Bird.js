@@ -67,7 +67,7 @@ class Bird {
         let r = this.radiusOfInfluence;
         let upperLeft = GetCellCoord(GetCellIndex(this.pos.Add(new Vector2(-r, -r))));
         ctx.rect(upperLeft.x, upperLeft.y, this.radiusOfInfluence * 3, this.radiusOfInfluence * 3);
-        ctx.fillStyle = "#6600FF7F";
+        ctx.fillStyle = "#6600FF3F";
         ctx.fill();
     }
 

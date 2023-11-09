@@ -30,7 +30,7 @@ function DrawCells(){
         ctx.lineTo(x+radiusOfInfluence, y);
         ctx.lineTo(x+radiusOfInfluence, y+radiusOfInfluence);
     }
-    ctx.strokeStyle = "#FF00667F";
+    ctx.strokeStyle = "#FF00663F";
     ctx.stroke();
 }
 
@@ -103,7 +103,7 @@ function main() {
     c.height = window.innerHeight;
 
     InitEventListners();
-    CreateBirds(2000);
+    CreateBirds(1000);
 
     Update();
 }
